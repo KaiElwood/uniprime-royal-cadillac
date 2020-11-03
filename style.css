@@ -38,16 +38,17 @@ h3 {
 
 @media screen and (max-width: 900px) {
     .blur{
-        filter: blur(.25px);
-        -webkit-filter: blur(.25px);
+        filter: none;
+        -webkit-filter: none;
         text-shadow: none;
     }
-  html { font-size: 14px; }
+    html { font-size: 14px; }
 }
+
 @media screen and (max-width: 400px) {
     .blur{
-        filter: blur(.05px);
-        -webkit-filter: blur(.05px);
+        filter: none;
+        -webkit-filter: none;
         text-shadow: none;
     }
   html { font-size: 12px; }
@@ -77,8 +78,15 @@ h3 {
     justify-content: center;
     height: 40px;
     line-height: 40px;
+    -webkit-box-shadow: -5px 4px 0px -4px black;
+       -moz-box-shadow: -5px 4px 0px -4px black;
+            box-shadow: -5px 0px 0px -4px black;
     background: rgb(224,211,190);
     background: linear-gradient(180deg, rgba(236,228,216,1) 0%, rgba(216,192,154,1) 38%, rgba(217,194,158,1) 62%, rgba(236,228,216,1) 100%);
+}
+
+.nav :nth-of-type(1) {
+    box-shadow: none;
 }
 
 .img-container {
@@ -93,10 +101,10 @@ h3 {
 }
 
 .nav-item .border {
-    position: absolute;
+    position: fixed;
     /* margin-right: auto; */
     top: 20%;
-    height: 60%;
+    height: 5%;
     width: 25%;
     /* left: -60px; */
     border-left: solid #00000078 .5px;
