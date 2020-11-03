@@ -14,9 +14,19 @@ html{
 }
 
 @media (max-width: 900px) {
+    .blur{
+        filter: blur(.45px);
+        -webkit-filter: blur(.45px);
+        text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);;
+    }
   html { font-size: 14px; }
 }
 @media (max-width: 400px) {
+    .blur{
+        filter: blur(.3px);
+        -webkit-filter: blur(.45px);
+        text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);;
+    }
   html { font-size: 12px; }
 }
 
@@ -38,7 +48,7 @@ h3 {
 }
 
 .blur{
-    filter: blur(.95px);
+    filter: blur(.45px);
     -webkit-filter: blur(.45px);
     text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);;
 }
