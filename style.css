@@ -14,10 +14,10 @@ html{
 }
 
 @media (max-width: 900px) {
-  html { font-size: 12px; }
+  html { font-size: 14px; }
 }
 @media (max-width: 400px) {
-  html { font-size: 7px; }
+  html { font-size: 12px; }
 }
 
 h1 {
@@ -87,7 +87,7 @@ h3 {
     /* margin-right: auto; */
     top: 20%;
     height: 60%;
-    width: 23%;
+    width: 25%;
     /* left: -60px; */
     border-left: solid #00000078 .5px;
 }
