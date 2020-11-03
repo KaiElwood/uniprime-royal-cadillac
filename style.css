@@ -78,9 +78,9 @@ h3 {
     justify-content: center;
     height: 40px;
     line-height: 40px;
-    -webkit-box-shadow: -5px 4px 0px -4px black;
-       -moz-box-shadow: -5px 4px 0px -4px black;
-            box-shadow: -5px 0px 0px -4px black;
+    -webkit-box-shadow: -5px 4px 0px -4px rgb(56, 56, 56);
+       -moz-box-shadow: -5px 4px 0px -4px rgb(56, 56, 56);
+            box-shadow: -5px 0px 0px -4px rgb(56, 56, 56);
     background: rgb(224,211,190);
     background: linear-gradient(180deg, rgba(236,228,216,1) 0%, rgba(216,192,154,1) 38%, rgba(217,194,158,1) 62%, rgba(236,228,216,1) 100%);
 }
