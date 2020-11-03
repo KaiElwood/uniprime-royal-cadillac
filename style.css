@@ -36,7 +36,7 @@ h3 {
     text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .blur{
         filter: blur(.25px);
         -webkit-filter: blur(.25px);
@@ -44,7 +44,7 @@ h3 {
     }
   html { font-size: 14px; }
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .blur{
         filter: blur(.05px);
         -webkit-filter: blur(.05px);
