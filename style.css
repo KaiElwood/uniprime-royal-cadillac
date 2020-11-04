@@ -54,13 +54,14 @@ h3 {
   html { font-size: 12px; }
 }
 
-@media \\0 screen {
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
     .blur{
         filter: none;
         -webkit-filter: none;
         text-shadow: none;
     }
-}
+}}
 
 .header {
     width: 100vw;
