@@ -33,7 +33,7 @@ h3 {
 .blur{
     filter: blur(.45px);
     -webkit-filter: blur(.45px);
-    text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);;
+    text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (max-width: 900px) {
@@ -59,7 +59,7 @@ h3 {
     .blur{
         filter: none;
         -webkit-filter: none;
-        text-shadow: none;
+        text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);
     }
 }}
 
