@@ -7,20 +7,44 @@
 html, body {
     padding: 0;
     margin: 0;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 html{
     font-size: 16px;
+    cursor: none;
+}
+
+.page2 {
+    cursor: auto;
+    height: 100vh;
+}
+
+a {
+    cursor: none;
+}
+
+#cursor{
+    width: 30px;
+    height: 30px;
+    /* background: url(assets/cursor.png); */
+    position: absolute;
+    /* border-radius: 50%; */
+    /* border: 2px solid #fa8072; */
+    /* transform: translate(-50%,-50%); */
+    pointer-events: none;
+    z-index: 999;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow:  1px 13px 15px #3f3f3f48, 6px 9px 19px rgba(0, 0, 0, 1);;
+    /* text-shadow:  1px 13px 15px #3f3f3f48, 6px 9px 19px rgba(0, 0, 0, 1);; */
     color: black;
     z-index: 1;
     font-size: 4rem;
     font-weight: 100;
     text-align: center;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 
 h3 {
@@ -34,6 +58,10 @@ h3 {
     filter: blur(.45px);
     -webkit-filter: blur(.45px);
     text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.blur-title {
+    text-shadow: -2px 0px 0px rgba(0, 0, 0, 0.15), 1px 1px 0px rgba(0, 0, 0, 0.16), 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 
 @media screen and (max-width: 900px) {
@@ -72,6 +100,7 @@ h3 {
     background: rgb(61,191,196);
     background: linear-gradient(180deg, #4BA5BC 23%, rgba(61, 192, 196, 0) 96%);
     z-index: -1;
+    
 }
 
 .nav{
@@ -182,11 +211,17 @@ h3 {
 
 .experiment-header {
     background: #9AB2CA;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    /* text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c; */
 }
 
 .brown {
     background: #EFE3D0;
+}
+
+.blue-box-shadow {
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .button{
@@ -203,4 +238,17 @@ h3 {
     padding: 50px;
     display: block;
     text-align: center;
+}
+
+.background {
+        background-color: #fffcfc;
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+.well {
+    border: 1px solid #000000;    
+    
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
