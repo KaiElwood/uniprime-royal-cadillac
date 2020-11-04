@@ -54,6 +54,14 @@ h3 {
   html { font-size: 12px; }
 }
 
+@media not all and (min-resolution:.001dpcm) { 
+        .blur{
+            filter: none;
+            -webkit-filter: none;
+            text-shadow: none;
+        }
+}
+
 .header {
     width: 100vw;
     height: 40%;
